@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Blender Recreation</title>
+		<style>
+			body { 
+				margin: 0; 
+				background-color: #f0f0f0;
+				
+			}
+
+			.textFont{
+				font-family: "Open Sans", "Arial", sans-serif; 
+			}
+
+			#divContainer{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: "Open Sans", "Arial", sans-serif; 
+				height: 100vh;
+			}
+
+			#divForm, #divFormStartingPosition {
+				font-family: "Open Sans", "Arial", sans-serif; 
+				font-size: 25px;
+				line-height: 1.6em;
+				display: flex;
+  				align-items: center;
+				justify-content: center;
+				border-radius: 50px;
+				color: aliceblue;
+				background-color: #15172b;
+				width: 50%;
+				height: 50%;
+			}
+
+			 
+			.submitButton {
+			
+				
+				border-color: black;
+				border-radius: 10px;
+				font-family: "Open Sans", "Arial", sans-serif; 
+				
+				font-size: 18px; 
+				line-height: 1.6em; 
+			}
+
+			#trialSelect {
+				
+				font-family: "Open Sans", "Arial", sans-serif; 
+				font-size: 18px; 
+				line-height: 1.6em; 
+			}
+
+
+
+		</style>
+		<script type="module" crossorigin src="assets/index-mqi3vABX.js"></script>
+	</head>
+	<body>
+		<div id = "divContainer" style="display: none;">
+			<div id = "divForm">
+				<form id="myForm">
+					<div>Please select the participant rotation datafile!</div>
+					<br>
+					<input type="file" id="csvFile" class = "submitButton" accept=".csv"/>
+					<br>
+					<br>
+					<input type="submit" class = "submitButton" value="Submit" />
+				 </form>
+			</div>
+
+			<div id = "divFormStartingPosition">
+				<form id="startingPositionForm">
+					<div>Great, now select the <b>starting position</b> datafile!</div>
+					<br>
+					<input type="file" id="startingPositionCSVFile" class = "submitButton" accept=".csv"/>
+					<br>
+					<br>
+					<input type="submit" class = "submitButton" value="Submit" />
+				 </form>
+			</div>
+
+		</div>
+
+		
+		
+		<select name="trialNumbers" id="trialSelect">
+		</select>
+			
+
+		
+		
+
+
+	</body>
+</html>
